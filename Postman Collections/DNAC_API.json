@@ -2731,7 +2731,7 @@
 						"auth": {
 							"type": "noauth"
 						},
-						"method": "POST",
+						"method": "GET",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -2753,7 +2753,7 @@
 							"mode": "raw",
 							"raw": "{\n    \"name\": \"postman_proj\",\n    \"description\": \"testing some postman requests\"\n}"
 						},
-						"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/project"
+						"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/template"
 					},
 					"response": [
 						{
