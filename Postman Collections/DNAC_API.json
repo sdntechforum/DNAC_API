@@ -10699,7 +10699,30 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://{{dnac}}/dna/intent/api/v1/business/sda/edge-device?deviceManagementIpAddress",
+							"protocol": "https",
+							"host": [
+								"{{dnac}}"
+							],
+							"path": [
+								"dna",
+								"intent",
+								"api",
+								"v1",
+								"business",
+								"sda",
+								"edge-device"
+							],
+							"query": [
+								{
+									"key": "deviceManagementIpAddress",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
 					},
 					"response": []
 				}
