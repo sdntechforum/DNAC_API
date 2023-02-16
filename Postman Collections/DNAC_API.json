@@ -10690,7 +10690,20 @@
 		},
 		{
 			"name": "SDA",
-			"item": [],
+			"item": [
+				{
+					"name": "New Request",
+					"id": "49028b30-d931-4d31-b5c2-4a47bc5fc46c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
 			"id": "55350e99-ce3f-431e-b403-4f990fcc34d6"
 		}
 	],
