@@ -8419,7 +8419,7 @@
 			"name": "Platform",
 			"item": [
 				{
-					"name": "DNAC Release summary",
+					"name": "DNAC Connector Types",
 					"id": "cd12cc34-b6c9-489e-97fa-664671894b64",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
