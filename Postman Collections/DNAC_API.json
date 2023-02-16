@@ -10692,7 +10692,7 @@
 			"name": "SDA",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "Get Edge devices",
 					"id": "49028b30-d931-4d31-b5c2-4a47bc5fc46c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
