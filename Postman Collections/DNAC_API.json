@@ -11416,6 +11416,143 @@
 							"body": "[\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-103\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"AP CPU High Utilization\",\n        \"description\": \"AP is experiencing high CPU utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"CPU utilization for the AP $apName$ has exceeded the $threshold$% threshold. This issue is potentially impacting $clientCount$ client(s)\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Name\": \"AP $apName$ is experiencing high CPU utilization\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"ap_cpu_threshold_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-207\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Switch Experiencing High Memory Utilization\",\n        \"description\": \"Device experiencing high memory utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"Network Device $nwDeviceName$ is experiencing high memory utilization $memory$%\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Device experiencing high memory utilization\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_memory_high\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-NETWORKS-2-318\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Host MAC Address Flapping\",\n        \"description\": \"Host MAC Address Flapping seen on Network Device\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Topology\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"Host MAC Address flaps are detected along with other events that are indicative of a Layer2 loop. Go to Root Cause Analysis for detailed troubleshooting and see the exact impacted devices involved in the loop\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Host flaps observed in $vlanCount$ VLAN(s)\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"mac_flap_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-2-201\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Switch Power Failure\",\n        \"description\": \"Power supply failure on switch\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"There is a power supply failure in network device $nwDeviceName$.\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Power supply failure on device\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_issue_power\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-FABRIC_WIRED-1-310\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Fabric Devices Connectivity - Control Underlay\",\n        \"description\": \"Fabric Node Lost Connectivity to the Fabric Control Plane Device in the Physical Network\",\n        \"category\": \"ALERT\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 1,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"The $sourceRole$ $entityId$ has connectivity failure to the Fabric Control Plane $dstDeviceName$ in the physical network. This can prevent many of the services from functioning correctly.\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"$sourceRole$ $entityId$ Lost Connectivity to the Fabric Control Plane Device $destMgmtIp$ in the Physical Network\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"fabric_reachability_control_underlay_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-FABRIC_WIRED-2-309\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Fabric Devices Connectivity - Border Overlay\",\n        \"description\": \"Fabric Edge Lost Connectivity to the Fabric Border in the Virtual Network\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"There is a connectivity failure between the Fabric Edge $entityId$ and the Fabric Border $destMgmtIp$ in the Virtual Network VRF $vrf$, which is impacting many services from functioning properly\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Fabric Edge $entityId$ Lost Connectivity to the Fabric Border $destMgmtIp$ in the Virtual Network $vrf$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"fabric_reachability_border_overlay_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-105\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"AP Reboot Crash\",\n        \"description\": \"AP has rebooted due to a hardware or software crash\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"AP $apName$ has rebooted due to a hardware or software crash\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Name\": \"AP $apName$ has rebooted due to a hardware or software crash\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"ap_reboot_crash_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-252\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Router Experiencing High CPU Utilization\",\n        \"description\": \"Device experiencing high CPU utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"Device $nwDeviceName$ CPU usage has exceeded $threshold$% utilization for 30 minutes.\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Network Device $entityId$ Is Experiencing High CPU Utilization\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"router_cpu_high\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-208\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"High input/output Utilization on Switch Interfaces\",\n        \"description\": \"High input/output utilization on interfaces\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"High Input/Output utilization Rx $avgInputUtilization$% Tx $avgOutputUtilization$% on interface $interfaceName$, Device $nwDeviceName$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"High input/output utilization on interface $interfaceName$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_interface_excess_rx_tx_util\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-NON-FABRIC_WIRED-1-250\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Router unreachable\",\n        \"description\": \"Device is unreachable\",\n        \"category\": \"ALERT\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Non-Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 1,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"This network device $nwDeviceName$ is unreachable from controller. The device role is $fabricOrDeviceRole$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Network Device $entityId$ Is Unreachable From Controller\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"router_unreachable\"\n        ],\n        \"tenantId\": null\n    }\n]"
 						}
 					]
+				},
+				{
+					"name": "System Health aggregate 3 months ",
+					"id": "ab815349-3a09-4cf4-b635-3af8a0849da4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Auth-Token",
+								"type": "text",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": "https://{{dnac}}/dna/intent/api/v1/diagnostics/system/performance"
+					},
+					"response": [
+						{
+							"id": "c6c0c4cb-af68-4ae8-a549-a828a4866474",
+							"name": "Success 1.2.10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Auth-Token",
+										"type": "text",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{dnac}}/dna/intent/api/v1/events?tags=ASSURANCE",
+									"protocol": "https",
+									"host": [
+										"{{dnac}}"
+									],
+									"path": [
+										"dna",
+										"intent",
+										"api",
+										"v1",
+										"events"
+									],
+									"query": [
+										{
+											"key": "tags",
+											"value": "ASSURANCE"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jan 2020 23:00:24 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "webserver"
+								},
+								{
+									"key": "Via",
+									"value": "api-gateway"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-103\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"AP CPU High Utilization\",\n        \"description\": \"AP is experiencing high CPU utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"CPU utilization for the AP $apName$ has exceeded the $threshold$% threshold. This issue is potentially impacting $clientCount$ client(s)\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Name\": \"AP $apName$ is experiencing high CPU utilization\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"ap_cpu_threshold_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-207\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Switch Experiencing High Memory Utilization\",\n        \"description\": \"Device experiencing high memory utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"Network Device $nwDeviceName$ is experiencing high memory utilization $memory$%\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Device experiencing high memory utilization\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_memory_high\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-NETWORKS-2-318\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Host MAC Address Flapping\",\n        \"description\": \"Host MAC Address Flapping seen on Network Device\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Topology\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"Host MAC Address flaps are detected along with other events that are indicative of a Layer2 loop. Go to Root Cause Analysis for detailed troubleshooting and see the exact impacted devices involved in the loop\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Host flaps observed in $vlanCount$ VLAN(s)\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"mac_flap_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-2-201\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Switch Power Failure\",\n        \"description\": \"Power supply failure on switch\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"There is a power supply failure in network device $nwDeviceName$.\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Power supply failure on device\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_issue_power\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-FABRIC_WIRED-1-310\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Fabric Devices Connectivity - Control Underlay\",\n        \"description\": \"Fabric Node Lost Connectivity to the Fabric Control Plane Device in the Physical Network\",\n        \"category\": \"ALERT\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 1,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"The $sourceRole$ $entityId$ has connectivity failure to the Fabric Control Plane $dstDeviceName$ in the physical network. This can prevent many of the services from functioning correctly.\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"$sourceRole$ $entityId$ Lost Connectivity to the Fabric Control Plane Device $destMgmtIp$ in the Physical Network\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"fabric_reachability_control_underlay_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-FABRIC_WIRED-2-309\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Fabric Devices Connectivity - Border Overlay\",\n        \"description\": \"Fabric Edge Lost Connectivity to the Fabric Border in the Virtual Network\",\n        \"category\": \"ERROR\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 2,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"There is a connectivity failure between the Fabric Edge $entityId$ and the Fabric Border $destMgmtIp$ in the Virtual Network VRF $vrf$, which is impacting many services from functioning properly\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Fabric Edge $entityId$ Lost Connectivity to the Fabric Border $destMgmtIp$ in the Virtual Network $vrf$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"fabric_reachability_border_overlay_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-105\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"AP Reboot Crash\",\n        \"description\": \"AP has rebooted due to a hardware or software crash\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"AP $apName$ has rebooted due to a hardware or software crash\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Name\": \"AP $apName$ has rebooted due to a hardware or software crash\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"ap_reboot_crash_trigger\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-252\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Router Experiencing High CPU Utilization\",\n        \"description\": \"Device experiencing high CPU utilization\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"Device $nwDeviceName$ CPU usage has exceeded $threshold$% utilization for 30 minutes.\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Network Device $entityId$ Is Experiencing High CPU Utilization\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"router_cpu_high\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-DEVICES-3-208\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"High input/output Utilization on Switch Interfaces\",\n        \"description\": \"High input/output utilization on interfaces\",\n        \"category\": \"WARN\",\n        \"domain\": \"Know Your Network\",\n        \"subDomain\": \"Devices\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 3,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Details\": \"High Input/Output utilization Rx $avgInputUtilization$% Tx $avgOutputUtilization$% on interface $interfaceName$, Device $nwDeviceName$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"High input/output utilization on interface $interfaceName$\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"switch_interface_excess_rx_tx_util\"\n        ],\n        \"tenantId\": null\n    },\n    {\n        \"version\": null,\n        \"eventId\": \"NETWORK-NON-FABRIC_WIRED-1-250\",\n        \"namespace\": \"ASSURANCE\",\n        \"name\": \"Router unreachable\",\n        \"description\": \"Device is unreachable\",\n        \"category\": \"ALERT\",\n        \"domain\": \"Connectivity\",\n        \"subDomain\": \"Non-Fabric Wired\",\n        \"type\": \"NETWORK\",\n        \"source\": null,\n        \"severity\": 1,\n        \"details\": {\n            \"Type\": \"$eventSource$\",\n            \"Assurance Issue Priority\": \"$priority$\",\n            \"Assurance Issue Details\": \"This network device $nwDeviceName$ is unreachable from controller. The device role is $fabricOrDeviceRole$\",\n            \"Device\": \"$eventUniqueId$\",\n            \"Assurance Issue Name\": \"Network Device $entityId$ Is Unreachable From Controller\",\n            \"Assurance Issue Category\": \"$category$\",\n            \"Assurance Issue Status\": \"$status$\"\n        },\n        \"additionalDetails\": {},\n        \"subscriptionTypes\": [],\n        \"tags\": [\n            \"ASSURANCE\",\n            \"router_unreachable\"\n        ],\n        \"tenantId\": null\n    }\n]"
+						}
+					]
 				}
 			],
 			"id": "cce7e7c9-d955-473a-9002-e5c0856f0665"
