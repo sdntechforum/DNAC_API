@@ -5067,6 +5067,140 @@
 							"body": "{\n    \"response\": {\n        \"errorCode\": \"UNEXPECTED_ERROR\",\n        \"message\": \"JSON parse error: Unrecognized field \\\"unknown\\\" (class com.cisco.apicem.template.programmer.service.dto.TargetInfo), not marked as ignorable; nested exception is com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \\\"unknown\\\" (class com.cisco.apicem.template.programmer.service.dto.TargetInfo), not marked as ignorable (5 known properties: \\\"type\\\", \\\"id\\\", \\\"versionedTemplateId\\\", \\\"params\\\", \\\"hostName\\\"])\\n at [Source: java.io.PushbackInputStream@2f0a337f; line: 6, column: 28] (through reference chain: com.cisco.apicem.template.programmer.service.dto.TemplateDeploymentInfo[\\\"targetInfo\\\"]->java.util.ArrayList[0]->com.cisco.apicem.template.programmer.service.dto.TargetInfo[\\\"unknown\\\"])\",\n        \"detail\": \"An error occurred while invoking a REST API\",\n        \"href\": \"\"\n    },\n    \"version\": \"1.0\"\n}"
 						}
 					]
+				},
+				{
+					"name": "List Available Project",
+					"id": "a7a41d52-cd88-4445-af20-5b96622c97e5",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Auth-Token",
+								"value": "{{api_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"postman_proj\",\n    \"description\": \"testing some postman requests\"\n}"
+						},
+						"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/project"
+					},
+					"response": [
+						{
+							"id": "2bd0f514-62c7-480c-a2af-9fef975da3af",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "X-Auth-Token",
+										"value": "{{api_token}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"postman_proj\",\n    \"description\": \"testing some postman requests\"\n}"
+								},
+								"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/project"
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jan 2020 22:08:40 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=1s3xadptile5bkc9prokdhv4r;Path=/; Secure; HttpOnly; SameSite=Strict"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "webserver"
+								},
+								{
+									"key": "Via",
+									"value": "api-gateway"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"response\": {\n        \"taskId\": \"981d0e57-e42c-4f6c-a270-0d79e91644bb\",\n        \"url\": \"/api/v1/task/981d0e57-e42c-4f6c-a270-0d79e91644bb\"\n    },\n    \"version\": \"1.0\"\n}"
+						}
+					]
 				}
 			],
 			"id": "47a717b4-dbc3-4450-bf3a-2fb0142fa40c",
