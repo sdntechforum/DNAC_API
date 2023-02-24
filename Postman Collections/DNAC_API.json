@@ -2557,6 +2557,167 @@
 							"body": "{\n    \"response\": {\n        \"hostname\": \"C9300-SW01\",\n        \"lastUpdateTime\": 1579213212329,\n        \"upTime\": \"31 days, 21:40:25.41\",\n        \"macAddress\": \"f8:7b:20:71:64:00\",\n        \"softwareType\": \"IOS-XE\",\n        \"softwareVersion\": \"17.1.1\",\n        \"deviceSupportLevel\": \"Supported\",\n        \"reachabilityStatus\": \"Reachable\",\n        \"series\": \"Cisco Catalyst 9300 Series Switches\",\n        \"snmpContact\": \"\",\n        \"snmpLocation\": \"\",\n        \"tagCount\": \"0\",\n        \"tunnelUdpPort\": null,\n        \"waasDeviceMode\": null,\n        \"apManagerInterfaceIp\": \"\",\n        \"associatedWlcIp\": \"\",\n        \"bootDateTime\": \"2019-12-16 00:40:12\",\n        \"memorySize\": \"NA\",\n        \"family\": \"Switches and Hubs\",\n        \"errorCode\": null,\n        \"roleSource\": \"MANUAL\",\n        \"type\": \"Cisco Catalyst 9300 Switch\",\n        \"serialNumber\": \"FCW2141L001\",\n        \"location\": null,\n        \"collectionStatus\": \"Managed\",\n        \"errorDescription\": null,\n        \"interfaceCount\": \"0\",\n        \"lastUpdated\": \"2020-01-16 22:20:12\",\n        \"lineCardCount\": \"0\",\n        \"lineCardId\": \"\",\n        \"locationName\": null,\n        \"managementIpAddress\": \"10.10.20.81\",\n        \"platformId\": \"C9300-24UX\",\n        \"reachabilityFailureReason\": \"\",\n        \"role\": \"BORDER ROUTER\",\n        \"collectionInterval\": \"Global Default\",\n        \"inventoryStatusDetail\": \"<status><general code=\\\"SUCCESS\\\"/></status>\",\n        \"instanceUuid\": \"47e0bd5c-e984-4324-ae2f-fd647c74cc65\",\n        \"instanceTenantId\": \"5be540a20700b3004c25ea95\",\n        \"id\": \"47e0bd5c-e984-4324-ae2f-fd647c74cc65\"\n    },\n    \"version\": \"1.0\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Get global Netconf or SNMO cred",
+					"id": "bc8ffaba-be39-49f6-b1bd-ab23bfb48e56",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Auth-Token",
+								"type": "text",
+								"value": "{{api_token}}"
+							}
+						],
+						"url": {
+							"raw": "https://{{dnac}}/dna/intent/api/v1/global-credential?credentialSubType=NETCONF",
+							"protocol": "https",
+							"host": [
+								"{{dnac}}"
+							],
+							"path": [
+								"dna",
+								"intent",
+								"api",
+								"v1",
+								"global-credential"
+							],
+							"query": [
+								{
+									"key": "credentialSubType",
+									"value": "NETCONF",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "88ec148f-6fcc-49fb-96d8-a995ec60d10c",
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Auth-Token",
+										"type": "text",
+										"value": "{{api_token}}"
+									}
+								],
+								"url": {
+									"raw": "https://{{dnac}}/dna/intent/api/v1/global-credential?credentialSubType=CLI",
+									"protocol": "https",
+									"host": [
+										"{{dnac}}"
+									],
+									"path": [
+										"dna",
+										"intent",
+										"api",
+										"v1",
+										"global-credential"
+									],
+									"query": [
+										{
+											"key": "credentialSubType",
+											"value": "CLI"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Server",
+									"value": "webserver"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=CBD133D26FE5B519F3072A4EEF6358E8; Path=/apic-em-inventory-manager-service; HttpOnly; Secure; HttpOnly; SameSite=Strict"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jan 2020 22:20:21 GMT"
+								},
+								{
+									"key": "Via",
+									"value": "api-gateway"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"response\": [\n        {\n            \"password\": \"NO!$DATA!$\",\n            \"enablePassword\": null,\n            \"username\": \"admin\",\n            \"description\": null,\n            \"comments\": null,\n            \"credentialType\": null,\n            \"instanceUuid\": \"e65085f1-3a4b-47b7-af15-62b7d6088f5c\",\n            \"instanceTenantId\": \"5be540a20700b3004c25ea95\",\n            \"id\": \"e65085f1-3a4b-47b7-af15-62b7d6088f5c\"\n        }\n    ],\n    \"version\": \"1.0\"\n}"
+						}
+					]
 				}
 			],
 			"id": "5f5b6cc9-0f5c-4804-a2c5-08294e77ea26",
