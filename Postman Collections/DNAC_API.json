@@ -5362,6 +5362,140 @@
 							"body": "{\n    \"response\": {\n        \"taskId\": \"981d0e57-e42c-4f6c-a270-0d79e91644bb\",\n        \"url\": \"/api/v1/task/981d0e57-e42c-4f6c-a270-0d79e91644bb\"\n    },\n    \"version\": \"1.0\"\n}"
 						}
 					]
+				},
+				{
+					"name": "Create netconf template",
+					"id": "c3d4cee4-780b-4054-a3ef-b5272db725ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "X-Auth-Token",
+								"type": "text",
+								"value": "{{api_token}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Enable Netconf\",\n  \"composite\": false,\n  \"deviceTypes\": [\n    {\n      \"productFamily\": \"Switches and Hubs\",\n      \"productSeries\": \"Cisco Catalyst 9300 Series Switches, Cisco Catalyst 9400 Series Switches\",\n      \"productType\": \"Cisco Catalyst 9300 Switch,Cisco Catalyst 9400 Switch\"\n    }\n  ],\n  \"softwareType\": \"IOS-XE\",\n  \"templateContent\": \"netconf-yang\"\n}"
+						},
+						"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/project/c79f12c6-fcae-4c25-a567-c5aefedfec88/template"
+					},
+					"response": [
+						{
+							"id": "2b842da1-71b9-48dd-aec1-181155c22f58",
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "X-Auth-Token",
+										"type": "text",
+										"value": "{{api_token}}"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"simple_temp\",\n    \"composite\": false,\n    \"deviceTypes\": [\n        {\n            \"productFamily\": \"Switches and Hubs\",\n            \"productSeries\": \"Cisco Catalyst 9300 Series Switches\",\n            \"productType\": \"Cisco Catalyst 9300 Switch\"\n        }\n    ],\n    \"softwareType\": \"IOS-XE\",\n    \"templateContent\": \"hostname $hostname\\nip ssh version $ssh_ver\",\n    \"templateParams\": [\n        {\n            \"parameterName\": \"hostname\",\n            \"dataType\": \"STRING\",\n            \"required\": true,\n            \"order\": 1\n        },\n        {\n            \"parameterName\": \"ssh_ver\",\n            \"dataType\": \"INTEGER\",\n            \"required\": true,\n            \"order\": 2\n        }\n    ]\n}"
+								},
+								"url": "https://{{dnac}}/dna/intent/api/v1/template-programmer/project/c79f12c6-fcae-4c25-a567-c5aefedfec88/template"
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 16 Jan 2020 22:10:11 GMT"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "JSESSIONID=14177ewgstz7vx3ew87klj2o1;Path=/; Secure; HttpOnly; SameSite=Strict"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 01 Jan 1970 00:00:00 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "webserver"
+								},
+								{
+									"key": "Via",
+									"value": "api-gateway"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self' 'unsafe-inline' 'unsafe-eval' blob: data:"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "1"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"response\": {\n        \"taskId\": \"f4e2a614-ed0a-4791-9c4e-92ff198d863d\",\n        \"url\": \"/api/v1/task/f4e2a614-ed0a-4791-9c4e-92ff198d863d\"\n    },\n    \"version\": \"1.0\"\n}"
+						}
+					]
 				}
 			],
 			"id": "47a717b4-dbc3-4450-bf3a-2fb0142fa40c",
