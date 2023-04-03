@@ -7684,7 +7684,7 @@
 					]
 				},
 				{
-					"name": "Get area",
+					"name": "Get site",
 					"id": "41212c19-8d62-4d6b-b475-7c665cd6bb16",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
